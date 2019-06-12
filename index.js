@@ -13,4 +13,6 @@ router.get('/koa', (ctx, next) => {
 });
 
 app.use(router.routes())
-app.listen(3000)
+
+const server = app.listen(3000)
+module.exports = server
